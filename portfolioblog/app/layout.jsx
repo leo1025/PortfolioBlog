@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css'
+import './globals.css'
 
 import NavBar from '../components/navbar'
 
@@ -11,7 +12,9 @@ export default function RootLayout({ children, })
                     <NavBar />
                 </header>
 
-                {children}
+                <div className='w-75 mx-auto color'>
+                    {children}
+                </div>
 
                 <footer>
                     Copyright 2023

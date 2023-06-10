@@ -15,14 +15,14 @@ export default function NavBar()
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About</a>
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">Contact</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Portfolio</a>
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">Portfolio</a>
                     </li>
                 </ul>
             </div>
