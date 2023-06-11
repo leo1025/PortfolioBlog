@@ -12,13 +12,13 @@ export default function RootLayout({ children, })
                     <NavBar />
                 </header>
 
-                <div className='w-75 mx-auto color'>
+                <div className='w-75 mx-auto'>
                     {children}
-                </div>
 
-                <footer>
-                    Copyright 2023
-                </footer>
+                    <footer>
+                        Copyright 2023
+                    </footer>
+                </div>
             </body>
         </html>
     );

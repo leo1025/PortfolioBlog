@@ -1,0 +1,20 @@
+.navbar {
+    width: 75% !important;
+    margin: auto;
+}
+
+.navbox {
+    background-color: #292929 !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav-link:hover {
+    color: #00b909 !important;
+}
+
+a {
+    color: #eeeeee !important;
+}

@@ -1,31 +1,25 @@
 "use client"
-import { useEffect } from 'react'
+
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import './navbar.css'
 
 export default function NavBar()
 {
-    useEffect(() => {
-        import('bootstrap/dist/js/bootstrap')
-    }, [])
-
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">Leona</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">About</a>
-                    </li>
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">Contact</a>
-                    </li>
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div className='navbox'>
+            <Navbar bg="none" expand="lg">
+                <Navbar.Brand href="/">Leona DA</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ms-auto">
+                        <Nav.Link href="">About</Nav.Link>
+                        <Nav.Link href="">Contact</Nav.Link>
+                        <Nav.Link href="">Blog</Nav.Link>
+                        <Nav.Link href="portfolio">Portfolio</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        </div>
     );
 }
